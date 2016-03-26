@@ -13,10 +13,9 @@ public class JavaClass {
     public static String compress(String str) {
         String compressed = "";
         HashMap<String, Integer> lCount = new HashMap<String, Integer>();
-        int duplicate = 2;
+        int dup = 1;
 
         for (int n = 0; n < str.length(); n++) {
-
             String c = str.substring(n, n + 1);
 
             if (lCount.get(c) == null) {
